@@ -27,7 +27,7 @@ class Settings(BaseSettings):
     DB_HOST: str = "localhost"
     DB_PORT: int = 5432
     DB_USER: str = "postgres"
-    DB_PASSWORD: str = "2221"
+    DB_PASSWORD: str = "clave-database"
     DB_NAME: str = "booking_scraper"
 
     @property
