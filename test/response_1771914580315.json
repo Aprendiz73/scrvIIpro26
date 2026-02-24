@@ -1,0 +1,805 @@
+{
+  "total": 80,
+  "logs": [
+    {
+      "id": 760,
+      "url_id": 240,
+      "language": "it",
+      "status": "completed",
+      "duration_s": 463.82,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 03:00:54.758752"
+    },
+    {
+      "id": 759,
+      "url_id": 240,
+      "language": "fr",
+      "status": "completed",
+      "duration_s": 372.85,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:59:23.795338"
+    },
+    {
+      "id": 758,
+      "url_id": 240,
+      "language": "de",
+      "status": "completed",
+      "duration_s": 280.4,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:57:51.343866"
+    },
+    {
+      "id": 757,
+      "url_id": 240,
+      "language": "es",
+      "status": "completed",
+      "duration_s": 188.5,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:56:19.439058"
+    },
+    {
+      "id": 756,
+      "url_id": 240,
+      "language": "en",
+      "status": "completed",
+      "duration_s": 94.29,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:54:45.228983"
+    },
+    {
+      "id": 755,
+      "url_id": 239,
+      "language": "it",
+      "status": "completed",
+      "duration_s": 463.77,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:53:08.584666"
+    },
+    {
+      "id": 754,
+      "url_id": 239,
+      "language": "fr",
+      "status": "completed",
+      "duration_s": 371.48,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:51:36.304229"
+    },
+    {
+      "id": 753,
+      "url_id": 239,
+      "language": "de",
+      "status": "completed",
+      "duration_s": 278.84,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:50:03.656400"
+    },
+    {
+      "id": 752,
+      "url_id": 239,
+      "language": "es",
+      "status": "completed",
+      "duration_s": 186.99,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:48:31.808919"
+    },
+    {
+      "id": 751,
+      "url_id": 239,
+      "language": "en",
+      "status": "completed",
+      "duration_s": 92.95,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:46:57.768817"
+    },
+    {
+      "id": 750,
+      "url_id": 238,
+      "language": "it",
+      "status": "completed",
+      "duration_s": 462.72,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:45:22.455564"
+    },
+    {
+      "id": 749,
+      "url_id": 238,
+      "language": "fr",
+      "status": "completed",
+      "duration_s": 369.85,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:43:49.580476"
+    },
+    {
+      "id": 748,
+      "url_id": 238,
+      "language": "de",
+      "status": "completed",
+      "duration_s": 277.06,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:42:16.794811"
+    },
+    {
+      "id": 747,
+      "url_id": 238,
+      "language": "es",
+      "status": "completed",
+      "duration_s": 186.19,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:40:45.927390"
+    },
+    {
+      "id": 746,
+      "url_id": 238,
+      "language": "en",
+      "status": "completed",
+      "duration_s": 92.58,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:39:12.312454"
+    },
+    {
+      "id": 745,
+      "url_id": 237,
+      "language": "it",
+      "status": "completed",
+      "duration_s": 463.59,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:37:37.328509"
+    },
+    {
+      "id": 744,
+      "url_id": 237,
+      "language": "fr",
+      "status": "completed",
+      "duration_s": 372.3,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:36:06.044823"
+    },
+    {
+      "id": 743,
+      "url_id": 237,
+      "language": "de",
+      "status": "completed",
+      "duration_s": 280.21,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:34:33.949882"
+    },
+    {
+      "id": 742,
+      "url_id": 237,
+      "language": "es",
+      "status": "completed",
+      "duration_s": 186.32,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:33:00.061173"
+    },
+    {
+      "id": 741,
+      "url_id": 237,
+      "language": "en",
+      "status": "completed",
+      "duration_s": 93.97,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:31:27.709113"
+    },
+    {
+      "id": 740,
+      "url_id": 236,
+      "language": "it",
+      "status": "completed",
+      "duration_s": 450.88,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:29:51.371396"
+    },
+    {
+      "id": 739,
+      "url_id": 236,
+      "language": "fr",
+      "status": "completed",
+      "duration_s": 358.76,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:28:19.260390"
+    },
+    {
+      "id": 738,
+      "url_id": 236,
+      "language": "de",
+      "status": "completed",
+      "duration_s": 266.75,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:26:47.247874"
+    },
+    {
+      "id": 737,
+      "url_id": 236,
+      "language": "es",
+      "status": "completed",
+      "duration_s": 175.09,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:25:15.589997"
+    },
+    {
+      "id": 736,
+      "url_id": 236,
+      "language": "en",
+      "status": "completed",
+      "duration_s": 82.19,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:23:42.687660"
+    },
+    {
+      "id": 735,
+      "url_id": 235,
+      "language": "it",
+      "status": "completed",
+      "duration_s": 464.8,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:22:18.017161"
+    },
+    {
+      "id": 734,
+      "url_id": 235,
+      "language": "fr",
+      "status": "completed",
+      "duration_s": 373.53,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:20:46.746506"
+    },
+    {
+      "id": 733,
+      "url_id": 235,
+      "language": "de",
+      "status": "completed",
+      "duration_s": 280.59,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:19:13.803457"
+    },
+    {
+      "id": 732,
+      "url_id": 235,
+      "language": "es",
+      "status": "completed",
+      "duration_s": 187.32,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:17:40.535183"
+    },
+    {
+      "id": 731,
+      "url_id": 235,
+      "language": "en",
+      "status": "completed",
+      "duration_s": 93.39,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:16:06.600799"
+    },
+    {
+      "id": 730,
+      "url_id": 234,
+      "language": "it",
+      "status": "completed",
+      "duration_s": 463.87,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:14:05.875940"
+    },
+    {
+      "id": 729,
+      "url_id": 234,
+      "language": "fr",
+      "status": "completed",
+      "duration_s": 372.07,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:12:34.072062"
+    },
+    {
+      "id": 728,
+      "url_id": 234,
+      "language": "de",
+      "status": "completed",
+      "duration_s": 280.79,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:11:02.800522"
+    },
+    {
+      "id": 727,
+      "url_id": 234,
+      "language": "es",
+      "status": "completed",
+      "duration_s": 189.15,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:09:31.152463"
+    },
+    {
+      "id": 726,
+      "url_id": 234,
+      "language": "en",
+      "status": "completed",
+      "duration_s": 95.32,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:07:57.327236"
+    },
+    {
+      "id": 725,
+      "url_id": 233,
+      "language": "it",
+      "status": "completed",
+      "duration_s": 465.11,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:06:19.626045"
+    },
+    {
+      "id": 724,
+      "url_id": 233,
+      "language": "fr",
+      "status": "completed",
+      "duration_s": 373.49,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:04:48.012332"
+    },
+    {
+      "id": 723,
+      "url_id": 233,
+      "language": "de",
+      "status": "completed",
+      "duration_s": 282.44,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:03:16.955006"
+    },
+    {
+      "id": 722,
+      "url_id": 233,
+      "language": "es",
+      "status": "completed",
+      "duration_s": 189.88,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:01:44.395381"
+    },
+    {
+      "id": 721,
+      "url_id": 233,
+      "language": "en",
+      "status": "completed",
+      "duration_s": 94.94,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 02:00:09.453735"
+    },
+    {
+      "id": 720,
+      "url_id": 232,
+      "language": "it",
+      "status": "completed",
+      "duration_s": 463.54,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:58:32.146458"
+    },
+    {
+      "id": 719,
+      "url_id": 232,
+      "language": "fr",
+      "status": "completed",
+      "duration_s": 371.26,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:56:59.932695"
+    },
+    {
+      "id": 718,
+      "url_id": 232,
+      "language": "de",
+      "status": "completed",
+      "duration_s": 280.23,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:55:28.920819"
+    },
+    {
+      "id": 717,
+      "url_id": 232,
+      "language": "es",
+      "status": "completed",
+      "duration_s": 187.9,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:53:56.503273"
+    },
+    {
+      "id": 716,
+      "url_id": 232,
+      "language": "en",
+      "status": "completed",
+      "duration_s": 92.7,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:52:21.312268"
+    },
+    {
+      "id": 715,
+      "url_id": 231,
+      "language": "it",
+      "status": "completed",
+      "duration_s": 462.28,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:50:46.228583"
+    },
+    {
+      "id": 714,
+      "url_id": 231,
+      "language": "fr",
+      "status": "completed",
+      "duration_s": 370.64,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:49:14.582886"
+    },
+    {
+      "id": 713,
+      "url_id": 231,
+      "language": "de",
+      "status": "completed",
+      "duration_s": 278.59,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:47:42.531595"
+    },
+    {
+      "id": 712,
+      "url_id": 231,
+      "language": "es",
+      "status": "completed",
+      "duration_s": 187.27,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:46:11.213165"
+    },
+    {
+      "id": 711,
+      "url_id": 231,
+      "language": "en",
+      "status": "completed",
+      "duration_s": 93.39,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:44:37.335063"
+    },
+    {
+      "id": 710,
+      "url_id": 230,
+      "language": "it",
+      "status": "completed",
+      "duration_s": 469.01,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:43:01.561615"
+    },
+    {
+      "id": 709,
+      "url_id": 230,
+      "language": "fr",
+      "status": "completed",
+      "duration_s": 376.13,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:41:28.686194"
+    },
+    {
+      "id": 708,
+      "url_id": 230,
+      "language": "de",
+      "status": "completed",
+      "duration_s": 283.46,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:39:56.015335"
+    },
+    {
+      "id": 707,
+      "url_id": 230,
+      "language": "es",
+      "status": "completed",
+      "duration_s": 188.62,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:38:21.170564"
+    },
+    {
+      "id": 706,
+      "url_id": 230,
+      "language": "en",
+      "status": "completed",
+      "duration_s": 93.84,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:36:46.391865"
+    },
+    {
+      "id": 705,
+      "url_id": 229,
+      "language": "it",
+      "status": "completed",
+      "duration_s": 462.31,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:35:10.191198"
+    },
+    {
+      "id": 704,
+      "url_id": 229,
+      "language": "fr",
+      "status": "completed",
+      "duration_s": 369.71,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:33:37.590203"
+    },
+    {
+      "id": 703,
+      "url_id": 229,
+      "language": "de",
+      "status": "completed",
+      "duration_s": 277.71,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:32:05.594216"
+    },
+    {
+      "id": 702,
+      "url_id": 229,
+      "language": "es",
+      "status": "completed",
+      "duration_s": 187.4,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:30:35.280163"
+    },
+    {
+      "id": 701,
+      "url_id": 229,
+      "language": "en",
+      "status": "completed",
+      "duration_s": 93.9,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:29:01.785524"
+    },
+    {
+      "id": 700,
+      "url_id": 228,
+      "language": "it",
+      "status": "completed",
+      "duration_s": 465.24,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:27:25.497730"
+    },
+    {
+      "id": 699,
+      "url_id": 228,
+      "language": "fr",
+      "status": "completed",
+      "duration_s": 371.48,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:25:51.739564"
+    },
+    {
+      "id": 698,
+      "url_id": 228,
+      "language": "de",
+      "status": "completed",
+      "duration_s": 277.68,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:24:17.939821"
+    },
+    {
+      "id": 697,
+      "url_id": 228,
+      "language": "es",
+      "status": "completed",
+      "duration_s": 184.57,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:22:44.835307"
+    },
+    {
+      "id": 696,
+      "url_id": 228,
+      "language": "en",
+      "status": "completed",
+      "duration_s": 92.16,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:21:12.417976"
+    },
+    {
+      "id": 695,
+      "url_id": 227,
+      "language": "it",
+      "status": "completed",
+      "duration_s": 465.75,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:19:37.535053"
+    },
+    {
+      "id": 694,
+      "url_id": 227,
+      "language": "fr",
+      "status": "completed",
+      "duration_s": 373.53,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:18:05.319743"
+    },
+    {
+      "id": 693,
+      "url_id": 227,
+      "language": "de",
+      "status": "completed",
+      "duration_s": 279.5,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:16:31.285432"
+    },
+    {
+      "id": 692,
+      "url_id": 227,
+      "language": "es",
+      "status": "completed",
+      "duration_s": 186.87,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:14:58.652624"
+    },
+    {
+      "id": 691,
+      "url_id": 227,
+      "language": "en",
+      "status": "completed",
+      "duration_s": 93.51,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:13:25.291074"
+    },
+    {
+      "id": 690,
+      "url_id": 226,
+      "language": "it",
+      "status": "completed",
+      "duration_s": 465.98,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:11:49.394063"
+    },
+    {
+      "id": 689,
+      "url_id": 226,
+      "language": "fr",
+      "status": "completed",
+      "duration_s": 372.78,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:10:16.194603"
+    },
+    {
+      "id": 688,
+      "url_id": 226,
+      "language": "de",
+      "status": "completed",
+      "duration_s": 280.41,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:08:43.824981"
+    },
+    {
+      "id": 687,
+      "url_id": 226,
+      "language": "es",
+      "status": "completed",
+      "duration_s": 187.1,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:07:10.510502"
+    },
+    {
+      "id": 686,
+      "url_id": 226,
+      "language": "en",
+      "status": "completed",
+      "duration_s": 92.6,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:05:36.008619"
+    },
+    {
+      "id": 685,
+      "url_id": 225,
+      "language": "it",
+      "status": "completed",
+      "duration_s": 461.68,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:04:01.015300"
+    },
+    {
+      "id": 684,
+      "url_id": 225,
+      "language": "fr",
+      "status": "completed",
+      "duration_s": 371.23,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:02:30.563880"
+    },
+    {
+      "id": 683,
+      "url_id": 225,
+      "language": "de",
+      "status": "completed",
+      "duration_s": 278.01,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 01:00:57.346119"
+    },
+    {
+      "id": 682,
+      "url_id": 225,
+      "language": "es",
+      "status": "completed",
+      "duration_s": 187.04,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 00:59:26.373586"
+    },
+    {
+      "id": 681,
+      "url_id": 225,
+      "language": "en",
+      "status": "completed",
+      "duration_s": 93.28,
+      "items": 1,
+      "error": null,
+      "timestamp": "2026-02-24 00:57:52.620472"
+    }
+  ]
+}
