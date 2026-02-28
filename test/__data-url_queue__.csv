@@ -1,0 +1,17 @@
+"id","url","language","status","priority","retry_count","last_error","created_at","updated_at","scraped_at","max_retries"
+433,"https://www.booking.com/hotel/sc/garden-hill-resort-amp-spa.html","en","processing",5,0,NULL,"2026-02-28 14:14:12.693037","2026-02-28 22:52:28.295894",NULL,3
+434,"https://www.booking.com/hotel/sc/cb-seychelles.html","en","processing",5,0,NULL,"2026-02-28 14:14:12.693037","2026-02-28 22:52:28.295894",NULL,3
+435,"https://www.booking.com/hotel/sc/avani-seychelles-barbarons-resort-amp-spa.html","en","processing",5,0,NULL,"2026-02-28 14:14:12.693037","2026-02-28 22:52:28.295894",NULL,3
+436,"https://www.booking.com/hotel/bb/leroy.html","en","processing",5,0,NULL,"2026-02-28 14:14:12.693037","2026-02-28 22:52:28.295894",NULL,3
+437,"https://www.booking.com/hotel/bs/the-island-garden.html","en","processing",5,0,NULL,"2026-02-28 14:14:12.693037","2026-02-28 22:52:28.295894",NULL,3
+443,"https://www.booking.com/hotel/mv/cocomo-maldives-k-himmafushi.html","en","processing",5,0,NULL,"2026-02-28 14:14:12.693037","2026-02-28 22:52:28.295894",NULL,3
+444,"https://www.booking.com/hotel/mv/cheval-blanc-randheli-noonu-atoll.html","en","processing",5,0,NULL,"2026-02-28 14:14:12.693037","2026-02-28 22:52:28.295894",NULL,3
+445,"https://www.booking.com/hotel/mv/icom-blue-seaview.html","en","processing",5,0,NULL,"2026-02-28 14:14:12.693037","2026-02-28 22:52:28.295894",NULL,3
+446,"https://www.booking.com/hotel/mv/eri-maldives.html","en","processing",5,0,NULL,"2026-02-28 14:14:12.693037","2026-02-28 22:52:28.295894",NULL,3
+447,"https://www.booking.com/hotel/mv/dusitd2-feydhoo-maldives-all-inclusive-resort.html","en","processing",5,0,NULL,"2026-02-28 14:14:12.693037","2026-02-28 22:52:28.295894",NULL,3
+438,"https://www.booking.com/hotel/tc/grace-bay-club.html","en","processing",5,0,NULL,"2026-02-28 14:14:12.693037","2026-02-28 22:52:58.714327",NULL,3
+439,"https://www.booking.com/hotel/tc/south-bank.html","en","processing",5,0,NULL,"2026-02-28 14:14:12.693037","2026-02-28 22:52:58.714327",NULL,3
+440,"https://www.booking.com/hotel/vc/the-pink-sands-club.html","en","processing",5,0,NULL,"2026-02-28 14:14:12.693037","2026-02-28 22:52:58.714327",NULL,3
+441,"https://www.booking.com/hotel/mv/niyama-private-islands-maldives.html","en","processing",5,0,NULL,"2026-02-28 14:14:12.693037","2026-02-28 22:52:58.714327",NULL,3
+442,"https://www.booking.com/hotel/mv/ananea-madivaru-maldives.html","en","processing",5,0,NULL,"2026-02-28 14:14:12.693037","2026-02-28 22:52:58.714327",NULL,3
+448,"https://www.booking.com/hotel/mv/centara-grand-lagoon-maldives.html","en","processing",5,0,NULL,"2026-02-28 14:14:12.693037","2026-02-28 22:52:58.714327",NULL,3
