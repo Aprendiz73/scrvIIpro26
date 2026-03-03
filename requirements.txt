@@ -40,12 +40,16 @@ redis>=5.2.0,<5.3.0                         # Redis client (broker + result back
 cloudscraper>=1.2.71,<1.3.0                 # Bypass Cloudflare anti-bot (CloudScraper)
 requests>=2.32.0,<2.33.0                    # HTTP client (CloudScraper dependency)
 selenium>=4.27.0,<4.28.0                    # Browser automation (Brave/Chrome/Edge)
+beautifulsoup4>=4.12.0,<4.13.0              # [FIX NEW-BUG-A] HTML parser — required by extractor.py (BookingExtractor)
+                                            # Added S8: extractor.py created in S6 but dep was not registered
 
 
 # ── Data Processing & Export ──────────────────────────────────────────────────
 pandas>=2.2.0,<2.3.0                        # DataFrame export to CSV/Excel/JSON
 openpyxl>=3.1.5,<3.2.0                      # Excel (.xlsx) read/write — pandas backend
 numpy>=2.1.0,<2.2.0                         # pandas peer dep — explicit pin
+Pillow>=11.0.0,<11.1.0                      # [FIX NEW-BUG-B] Image resize/convert — required by image_downloader.py
+                                            # Added S8: image_downloader.py created in S6 but dep was not registered
 
 
 # ── Logging ───────────────────────────────────────────────────────────────────
