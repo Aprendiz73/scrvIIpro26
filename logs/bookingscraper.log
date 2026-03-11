@@ -1,0 +1,475 @@
+{"time":"2026-03-08T08:10:12","level":"INFO","logger":"app.main","msg":Starting BookingScraper Pro v6.0.0 build 48 | platform=win32}
+{"time":"2026-03-08T08:10:12","level":"INFO","logger":"app.database","msg":Database engine created: host=localhost db=bookingscraper pool_size=10 max_overflow=5}
+{"time":"2026-03-08T08:25:57","level":"INFO","logger":"app.main","msg":Starting BookingScraper Pro v6.0.0 build 48 | platform=win32}
+{"time":"2026-03-08T08:25:57","level":"INFO","logger":"app.database","msg":Database engine created: host=localhost db=bookingscraper pool_size=10 max_overflow=5}
+{"time":"2026-03-08T08:31:03","level":"WARNING","logger":"app.scraper_service","msg":Invalid UUID in url_ids: badly formed hexadecimal UUID string}
+{"time":"2026-03-08T08:31:03","level":"INFO","logger":"app.scraper_service","msg":Dispatching batch: urls=10 workers=1}
+{"time":"2026-03-08T08:31:03","level":"INFO","logger":"app.scraper_service","msg":Redis connection pool created: max_connections=20}
+{"time":"2026-03-08T08:31:06","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.es.html}
+{"time":"2026-03-08T08:31:08","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.es.html}
+{"time":"2026-03-08T08:31:12","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.es.html}
+{"time":"2026-03-08T08:31:18","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.es.html}
+{"time":"2026-03-08T08:31:18","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for a89aefe5-0f2d-4d8b-9b8b-3fde79c4c807/es — trying Selenium.}
+{"time":"2026-03-08T08:31:19","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.es.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:31:19","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.en-gb.html}
+{"time":"2026-03-08T08:31:21","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.en-gb.html}
+{"time":"2026-03-08T08:31:26","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.en-gb.html}
+{"time":"2026-03-08T08:31:32","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.en-gb.html}
+{"time":"2026-03-08T08:31:32","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for a89aefe5-0f2d-4d8b-9b8b-3fde79c4c807/en — trying Selenium.}
+{"time":"2026-03-08T08:31:32","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.en-gb.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:31:32","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.de.html}
+{"time":"2026-03-08T08:31:34","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.de.html}
+{"time":"2026-03-08T08:31:39","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.de.html}
+{"time":"2026-03-08T08:31:45","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.de.html}
+{"time":"2026-03-08T08:31:45","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for a89aefe5-0f2d-4d8b-9b8b-3fde79c4c807/de — trying Selenium.}
+{"time":"2026-03-08T08:31:45","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.de.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:31:45","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.fr.html}
+{"time":"2026-03-08T08:31:47","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.fr.html}
+{"time":"2026-03-08T08:31:52","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.fr.html}
+{"time":"2026-03-08T08:31:58","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.fr.html}
+{"time":"2026-03-08T08:31:58","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for a89aefe5-0f2d-4d8b-9b8b-3fde79c4c807/fr — trying Selenium.}
+{"time":"2026-03-08T08:31:58","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.fr.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:31:58","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.it.html}
+{"time":"2026-03-08T08:32:00","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.it.html}
+{"time":"2026-03-08T08:32:05","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.it.html}
+{"time":"2026-03-08T08:32:11","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.it.html}
+{"time":"2026-03-08T08:32:11","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for a89aefe5-0f2d-4d8b-9b8b-3fde79c4c807/it — trying Selenium.}
+{"time":"2026-03-08T08:32:11","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.it.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:32:11","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.nl.html}
+{"time":"2026-03-08T08:32:13","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.nl.html}
+{"time":"2026-03-08T08:32:18","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.nl.html}
+{"time":"2026-03-08T08:32:24","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.nl.html}
+{"time":"2026-03-08T08:32:24","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for a89aefe5-0f2d-4d8b-9b8b-3fde79c4c807/nl — trying Selenium.}
+{"time":"2026-03-08T08:32:24","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.nl.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:32:24","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.pt-pt.html}
+{"time":"2026-03-08T08:32:26","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.pt-pt.html}
+{"time":"2026-03-08T08:32:31","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.pt-pt.html}
+{"time":"2026-03-08T08:32:37","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.pt-pt.html}
+{"time":"2026-03-08T08:32:37","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for a89aefe5-0f2d-4d8b-9b8b-3fde79c4c807/pt — trying Selenium.}
+{"time":"2026-03-08T08:32:37","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/hostal-residencia-aldebaran.pt-pt.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:32:37","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/pension-tamonante.es.html}
+{"time":"2026-03-08T08:32:39","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/pension-tamonante.es.html}
+{"time":"2026-03-08T08:32:43","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/pension-tamonante.es.html}
+{"time":"2026-03-08T08:32:49","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/pension-tamonante.es.html}
+{"time":"2026-03-08T08:32:49","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 9deaf3c2-2040-4518-a784-927d65cd7e1f/es — trying Selenium.}
+{"time":"2026-03-08T08:32:49","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/pension-tamonante.es.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:32:50","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/pension-tamonante.en-gb.html}
+{"time":"2026-03-08T08:32:52","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/pension-tamonante.en-gb.html}
+{"time":"2026-03-08T08:32:56","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/pension-tamonante.en-gb.html}
+{"time":"2026-03-08T08:33:03","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/pension-tamonante.en-gb.html}
+{"time":"2026-03-08T08:33:03","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 9deaf3c2-2040-4518-a784-927d65cd7e1f/en — trying Selenium.}
+{"time":"2026-03-08T08:33:03","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/pension-tamonante.en-gb.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:33:03","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/pension-tamonante.de.html}
+{"time":"2026-03-08T08:33:05","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/pension-tamonante.de.html}
+{"time":"2026-03-08T08:33:10","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/pension-tamonante.de.html}
+{"time":"2026-03-08T08:33:16","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/pension-tamonante.de.html}
+{"time":"2026-03-08T08:33:16","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 9deaf3c2-2040-4518-a784-927d65cd7e1f/de — trying Selenium.}
+{"time":"2026-03-08T08:33:16","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/pension-tamonante.de.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:33:16","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/pension-tamonante.fr.html}
+{"time":"2026-03-08T08:33:18","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/pension-tamonante.fr.html}
+{"time":"2026-03-08T08:33:23","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/pension-tamonante.fr.html}
+{"time":"2026-03-08T08:33:29","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/pension-tamonante.fr.html}
+{"time":"2026-03-08T08:33:29","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 9deaf3c2-2040-4518-a784-927d65cd7e1f/fr — trying Selenium.}
+{"time":"2026-03-08T08:33:29","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/pension-tamonante.fr.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:33:29","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/pension-tamonante.it.html}
+{"time":"2026-03-08T08:33:31","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/pension-tamonante.it.html}
+{"time":"2026-03-08T08:33:35","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/pension-tamonante.it.html}
+{"time":"2026-03-08T08:33:41","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/pension-tamonante.it.html}
+{"time":"2026-03-08T08:33:41","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 9deaf3c2-2040-4518-a784-927d65cd7e1f/it — trying Selenium.}
+{"time":"2026-03-08T08:33:41","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/pension-tamonante.it.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:33:42","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/pension-tamonante.nl.html}
+{"time":"2026-03-08T08:33:44","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/pension-tamonante.nl.html}
+{"time":"2026-03-08T08:33:48","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/pension-tamonante.nl.html}
+{"time":"2026-03-08T08:33:54","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/pension-tamonante.nl.html}
+{"time":"2026-03-08T08:33:54","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 9deaf3c2-2040-4518-a784-927d65cd7e1f/nl — trying Selenium.}
+{"time":"2026-03-08T08:33:54","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/pension-tamonante.nl.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:33:55","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/pension-tamonante.pt-pt.html}
+{"time":"2026-03-08T08:33:57","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/pension-tamonante.pt-pt.html}
+{"time":"2026-03-08T08:34:01","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/pension-tamonante.pt-pt.html}
+{"time":"2026-03-08T08:34:07","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/pension-tamonante.pt-pt.html}
+{"time":"2026-03-08T08:34:07","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 9deaf3c2-2040-4518-a784-927d65cd7e1f/pt — trying Selenium.}
+{"time":"2026-03-08T08:34:07","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/pension-tamonante.pt-pt.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:34:08","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.es.html}
+{"time":"2026-03-08T08:34:10","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.es.html}
+{"time":"2026-03-08T08:34:14","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.es.html}
+{"time":"2026-03-08T08:34:21","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.es.html}
+{"time":"2026-03-08T08:34:21","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for c54cbab4-6025-439f-b4e0-b0c96a8aac39/es — trying Selenium.}
+{"time":"2026-03-08T08:34:21","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.es.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:34:21","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.en-gb.html}
+{"time":"2026-03-08T08:34:23","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.en-gb.html}
+{"time":"2026-03-08T08:34:27","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.en-gb.html}
+{"time":"2026-03-08T08:34:34","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.en-gb.html}
+{"time":"2026-03-08T08:34:34","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for c54cbab4-6025-439f-b4e0-b0c96a8aac39/en — trying Selenium.}
+{"time":"2026-03-08T08:34:34","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.en-gb.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:34:34","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.de.html}
+{"time":"2026-03-08T08:34:36","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.de.html}
+{"time":"2026-03-08T08:34:41","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.de.html}
+{"time":"2026-03-08T08:34:47","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.de.html}
+{"time":"2026-03-08T08:34:47","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for c54cbab4-6025-439f-b4e0-b0c96a8aac39/de — trying Selenium.}
+{"time":"2026-03-08T08:34:47","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.de.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:34:47","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.fr.html}
+{"time":"2026-03-08T08:34:49","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.fr.html}
+{"time":"2026-03-08T08:34:54","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.fr.html}
+{"time":"2026-03-08T08:35:00","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.fr.html}
+{"time":"2026-03-08T08:35:00","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for c54cbab4-6025-439f-b4e0-b0c96a8aac39/fr — trying Selenium.}
+{"time":"2026-03-08T08:35:00","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.fr.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:35:00","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.it.html}
+{"time":"2026-03-08T08:35:02","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.it.html}
+{"time":"2026-03-08T08:35:07","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.it.html}
+{"time":"2026-03-08T08:35:13","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.it.html}
+{"time":"2026-03-08T08:35:13","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for c54cbab4-6025-439f-b4e0-b0c96a8aac39/it — trying Selenium.}
+{"time":"2026-03-08T08:35:13","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.it.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:35:13","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.nl.html}
+{"time":"2026-03-08T08:35:15","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.nl.html}
+{"time":"2026-03-08T08:35:20","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.nl.html}
+{"time":"2026-03-08T08:35:26","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.nl.html}
+{"time":"2026-03-08T08:35:26","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for c54cbab4-6025-439f-b4e0-b0c96a8aac39/nl — trying Selenium.}
+{"time":"2026-03-08T08:35:26","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.nl.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:35:26","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.pt-pt.html}
+{"time":"2026-03-08T08:35:28","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.pt-pt.html}
+{"time":"2026-03-08T08:35:33","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.pt-pt.html}
+{"time":"2026-03-08T08:35:39","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.pt-pt.html}
+{"time":"2026-03-08T08:35:39","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for c54cbab4-6025-439f-b4e0-b0c96a8aac39/pt — trying Selenium.}
+{"time":"2026-03-08T08:35:39","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/elba-lanzarote-royal-village-resort.pt-pt.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:35:39","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/hesperia-lanzarote.es.html}
+{"time":"2026-03-08T08:35:41","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/hesperia-lanzarote.es.html}
+{"time":"2026-03-08T08:35:46","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/hesperia-lanzarote.es.html}
+{"time":"2026-03-08T08:35:52","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/hesperia-lanzarote.es.html}
+{"time":"2026-03-08T08:35:52","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 05d04772-2825-442a-acb9-ea8a5395deaa/es — trying Selenium.}
+{"time":"2026-03-08T08:35:52","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/hesperia-lanzarote.es.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:35:52","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/hesperia-lanzarote.en-gb.html}
+{"time":"2026-03-08T08:35:54","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/hesperia-lanzarote.en-gb.html}
+{"time":"2026-03-08T08:35:59","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/hesperia-lanzarote.en-gb.html}
+{"time":"2026-03-08T08:36:05","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/hesperia-lanzarote.en-gb.html}
+{"time":"2026-03-08T08:36:05","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 05d04772-2825-442a-acb9-ea8a5395deaa/en — trying Selenium.}
+{"time":"2026-03-08T08:36:05","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/hesperia-lanzarote.en-gb.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:36:05","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/hesperia-lanzarote.de.html}
+{"time":"2026-03-08T08:36:07","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/hesperia-lanzarote.de.html}
+{"time":"2026-03-08T08:36:12","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/hesperia-lanzarote.de.html}
+{"time":"2026-03-08T08:36:18","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/hesperia-lanzarote.de.html}
+{"time":"2026-03-08T08:36:18","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 05d04772-2825-442a-acb9-ea8a5395deaa/de — trying Selenium.}
+{"time":"2026-03-08T08:36:18","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/hesperia-lanzarote.de.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:36:18","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/hesperia-lanzarote.fr.html}
+{"time":"2026-03-08T08:36:20","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/hesperia-lanzarote.fr.html}
+{"time":"2026-03-08T08:36:25","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/hesperia-lanzarote.fr.html}
+{"time":"2026-03-08T08:36:31","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/hesperia-lanzarote.fr.html}
+{"time":"2026-03-08T08:36:31","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 05d04772-2825-442a-acb9-ea8a5395deaa/fr — trying Selenium.}
+{"time":"2026-03-08T08:36:31","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/hesperia-lanzarote.fr.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:36:31","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/hesperia-lanzarote.it.html}
+{"time":"2026-03-08T08:36:33","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/hesperia-lanzarote.it.html}
+{"time":"2026-03-08T08:36:38","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/hesperia-lanzarote.it.html}
+{"time":"2026-03-08T08:36:44","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/hesperia-lanzarote.it.html}
+{"time":"2026-03-08T08:36:44","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 05d04772-2825-442a-acb9-ea8a5395deaa/it — trying Selenium.}
+{"time":"2026-03-08T08:36:44","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/hesperia-lanzarote.it.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:36:44","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/hesperia-lanzarote.nl.html}
+{"time":"2026-03-08T08:36:46","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/hesperia-lanzarote.nl.html}
+{"time":"2026-03-08T08:36:50","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/hesperia-lanzarote.nl.html}
+{"time":"2026-03-08T08:36:57","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/hesperia-lanzarote.nl.html}
+{"time":"2026-03-08T08:36:57","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 05d04772-2825-442a-acb9-ea8a5395deaa/nl — trying Selenium.}
+{"time":"2026-03-08T08:36:57","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/hesperia-lanzarote.nl.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:36:57","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/hesperia-lanzarote.pt-pt.html}
+{"time":"2026-03-08T08:36:59","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/hesperia-lanzarote.pt-pt.html}
+{"time":"2026-03-08T08:37:03","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/hesperia-lanzarote.pt-pt.html}
+{"time":"2026-03-08T08:37:09","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/hesperia-lanzarote.pt-pt.html}
+{"time":"2026-03-08T08:37:09","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 05d04772-2825-442a-acb9-ea8a5395deaa/pt — trying Selenium.}
+{"time":"2026-03-08T08:37:09","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/hesperia-lanzarote.pt-pt.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:37:10","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/faro-jandia.es.html}
+{"time":"2026-03-08T08:37:12","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/faro-jandia.es.html}
+{"time":"2026-03-08T08:37:16","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/faro-jandia.es.html}
+{"time":"2026-03-08T08:37:22","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/faro-jandia.es.html}
+{"time":"2026-03-08T08:37:22","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for ea79551a-3d60-46d3-a43a-75bb70ec9e3c/es — trying Selenium.}
+{"time":"2026-03-08T08:37:22","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/faro-jandia.es.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:37:23","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/faro-jandia.en-gb.html}
+{"time":"2026-03-08T08:37:25","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/faro-jandia.en-gb.html}
+{"time":"2026-03-08T08:37:29","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/faro-jandia.en-gb.html}
+{"time":"2026-03-08T08:37:35","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/faro-jandia.en-gb.html}
+{"time":"2026-03-08T08:37:35","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for ea79551a-3d60-46d3-a43a-75bb70ec9e3c/en — trying Selenium.}
+{"time":"2026-03-08T08:37:35","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/faro-jandia.en-gb.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:37:36","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/faro-jandia.de.html}
+{"time":"2026-03-08T08:37:38","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/faro-jandia.de.html}
+{"time":"2026-03-08T08:37:42","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/faro-jandia.de.html}
+{"time":"2026-03-08T08:37:48","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/faro-jandia.de.html}
+{"time":"2026-03-08T08:37:48","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for ea79551a-3d60-46d3-a43a-75bb70ec9e3c/de — trying Selenium.}
+{"time":"2026-03-08T08:37:48","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/faro-jandia.de.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:37:49","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/faro-jandia.fr.html}
+{"time":"2026-03-08T08:37:51","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/faro-jandia.fr.html}
+{"time":"2026-03-08T08:37:55","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/faro-jandia.fr.html}
+{"time":"2026-03-08T08:38:01","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/faro-jandia.fr.html}
+{"time":"2026-03-08T08:38:01","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for ea79551a-3d60-46d3-a43a-75bb70ec9e3c/fr — trying Selenium.}
+{"time":"2026-03-08T08:38:01","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/faro-jandia.fr.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:38:02","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/faro-jandia.it.html}
+{"time":"2026-03-08T08:38:04","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/faro-jandia.it.html}
+{"time":"2026-03-08T08:38:08","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/faro-jandia.it.html}
+{"time":"2026-03-08T08:38:14","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/faro-jandia.it.html}
+{"time":"2026-03-08T08:38:14","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for ea79551a-3d60-46d3-a43a-75bb70ec9e3c/it — trying Selenium.}
+{"time":"2026-03-08T08:38:14","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/faro-jandia.it.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:38:15","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/faro-jandia.nl.html}
+{"time":"2026-03-08T08:38:17","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/faro-jandia.nl.html}
+{"time":"2026-03-08T08:38:21","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/faro-jandia.nl.html}
+{"time":"2026-03-08T08:38:27","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/faro-jandia.nl.html}
+{"time":"2026-03-08T08:38:27","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for ea79551a-3d60-46d3-a43a-75bb70ec9e3c/nl — trying Selenium.}
+{"time":"2026-03-08T08:38:27","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/faro-jandia.nl.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:38:28","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/faro-jandia.pt-pt.html}
+{"time":"2026-03-08T08:38:30","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/faro-jandia.pt-pt.html}
+{"time":"2026-03-08T08:38:34","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/faro-jandia.pt-pt.html}
+{"time":"2026-03-08T08:38:40","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/faro-jandia.pt-pt.html}
+{"time":"2026-03-08T08:38:40","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for ea79551a-3d60-46d3-a43a-75bb70ec9e3c/pt — trying Selenium.}
+{"time":"2026-03-08T08:38:40","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/faro-jandia.pt-pt.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:38:41","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/riu-oliva-beach.es.html}
+{"time":"2026-03-08T08:38:43","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/riu-oliva-beach.es.html}
+{"time":"2026-03-08T08:38:47","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/riu-oliva-beach.es.html}
+{"time":"2026-03-08T08:38:53","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/riu-oliva-beach.es.html}
+{"time":"2026-03-08T08:38:53","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for aa002458-6b94-455f-a6bf-aeb8d9e5cf43/es — trying Selenium.}
+{"time":"2026-03-08T08:38:53","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/riu-oliva-beach.es.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:38:54","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/riu-oliva-beach.en-gb.html}
+{"time":"2026-03-08T08:38:56","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/riu-oliva-beach.en-gb.html}
+{"time":"2026-03-08T08:39:00","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/riu-oliva-beach.en-gb.html}
+{"time":"2026-03-08T08:39:06","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/riu-oliva-beach.en-gb.html}
+{"time":"2026-03-08T08:39:06","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for aa002458-6b94-455f-a6bf-aeb8d9e5cf43/en — trying Selenium.}
+{"time":"2026-03-08T08:39:06","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/riu-oliva-beach.en-gb.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:39:07","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/riu-oliva-beach.de.html}
+{"time":"2026-03-08T08:39:09","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/riu-oliva-beach.de.html}
+{"time":"2026-03-08T08:39:13","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/riu-oliva-beach.de.html}
+{"time":"2026-03-08T08:39:19","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/riu-oliva-beach.de.html}
+{"time":"2026-03-08T08:39:19","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for aa002458-6b94-455f-a6bf-aeb8d9e5cf43/de — trying Selenium.}
+{"time":"2026-03-08T08:39:19","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/riu-oliva-beach.de.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:39:20","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/riu-oliva-beach.fr.html}
+{"time":"2026-03-08T08:39:22","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/riu-oliva-beach.fr.html}
+{"time":"2026-03-08T08:39:26","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/riu-oliva-beach.fr.html}
+{"time":"2026-03-08T08:39:32","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/riu-oliva-beach.fr.html}
+{"time":"2026-03-08T08:39:32","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for aa002458-6b94-455f-a6bf-aeb8d9e5cf43/fr — trying Selenium.}
+{"time":"2026-03-08T08:39:32","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/riu-oliva-beach.fr.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:39:33","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/riu-oliva-beach.it.html}
+{"time":"2026-03-08T08:39:35","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/riu-oliva-beach.it.html}
+{"time":"2026-03-08T08:39:39","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/riu-oliva-beach.it.html}
+{"time":"2026-03-08T08:39:45","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/riu-oliva-beach.it.html}
+{"time":"2026-03-08T08:39:45","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for aa002458-6b94-455f-a6bf-aeb8d9e5cf43/it — trying Selenium.}
+{"time":"2026-03-08T08:39:45","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/riu-oliva-beach.it.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:39:46","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/riu-oliva-beach.nl.html}
+{"time":"2026-03-08T08:39:48","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/riu-oliva-beach.nl.html}
+{"time":"2026-03-08T08:39:52","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/riu-oliva-beach.nl.html}
+{"time":"2026-03-08T08:39:58","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/riu-oliva-beach.nl.html}
+{"time":"2026-03-08T08:39:58","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for aa002458-6b94-455f-a6bf-aeb8d9e5cf43/nl — trying Selenium.}
+{"time":"2026-03-08T08:39:58","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/riu-oliva-beach.nl.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:39:59","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/riu-oliva-beach.pt-pt.html}
+{"time":"2026-03-08T08:40:01","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/riu-oliva-beach.pt-pt.html}
+{"time":"2026-03-08T08:40:05","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/riu-oliva-beach.pt-pt.html}
+{"time":"2026-03-08T08:40:11","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/riu-oliva-beach.pt-pt.html}
+{"time":"2026-03-08T08:40:11","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for aa002458-6b94-455f-a6bf-aeb8d9e5cf43/pt — trying Selenium.}
+{"time":"2026-03-08T08:40:11","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/riu-oliva-beach.pt-pt.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:40:12","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/atlantic-gardens.es.html}
+{"time":"2026-03-08T08:40:14","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/atlantic-gardens.es.html}
+{"time":"2026-03-08T08:40:18","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/atlantic-gardens.es.html}
+{"time":"2026-03-08T08:40:24","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/atlantic-gardens.es.html}
+{"time":"2026-03-08T08:40:24","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 64942cda-0d30-419a-802a-6ec03bb5d49e/es — trying Selenium.}
+{"time":"2026-03-08T08:40:24","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/atlantic-gardens.es.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:40:25","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/atlantic-gardens.en-gb.html}
+{"time":"2026-03-08T08:40:27","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/atlantic-gardens.en-gb.html}
+{"time":"2026-03-08T08:40:31","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/atlantic-gardens.en-gb.html}
+{"time":"2026-03-08T08:40:37","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/atlantic-gardens.en-gb.html}
+{"time":"2026-03-08T08:40:37","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 64942cda-0d30-419a-802a-6ec03bb5d49e/en — trying Selenium.}
+{"time":"2026-03-08T08:40:37","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/atlantic-gardens.en-gb.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:40:38","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/atlantic-gardens.de.html}
+{"time":"2026-03-08T08:40:40","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/atlantic-gardens.de.html}
+{"time":"2026-03-08T08:40:44","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/atlantic-gardens.de.html}
+{"time":"2026-03-08T08:40:50","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/atlantic-gardens.de.html}
+{"time":"2026-03-08T08:40:50","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 64942cda-0d30-419a-802a-6ec03bb5d49e/de — trying Selenium.}
+{"time":"2026-03-08T08:40:50","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/atlantic-gardens.de.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:40:51","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/atlantic-gardens.fr.html}
+{"time":"2026-03-08T08:40:53","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/atlantic-gardens.fr.html}
+{"time":"2026-03-08T08:40:57","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/atlantic-gardens.fr.html}
+{"time":"2026-03-08T08:41:03","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/atlantic-gardens.fr.html}
+{"time":"2026-03-08T08:41:03","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 64942cda-0d30-419a-802a-6ec03bb5d49e/fr — trying Selenium.}
+{"time":"2026-03-08T08:41:03","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/atlantic-gardens.fr.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:41:04","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/atlantic-gardens.it.html}
+{"time":"2026-03-08T08:41:06","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/atlantic-gardens.it.html}
+{"time":"2026-03-08T08:41:10","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/atlantic-gardens.it.html}
+{"time":"2026-03-08T08:41:16","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/atlantic-gardens.it.html}
+{"time":"2026-03-08T08:41:16","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 64942cda-0d30-419a-802a-6ec03bb5d49e/it — trying Selenium.}
+{"time":"2026-03-08T08:41:16","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/atlantic-gardens.it.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:41:17","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/atlantic-gardens.nl.html}
+{"time":"2026-03-08T08:41:19","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/atlantic-gardens.nl.html}
+{"time":"2026-03-08T08:41:23","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/atlantic-gardens.nl.html}
+{"time":"2026-03-08T08:41:29","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/atlantic-gardens.nl.html}
+{"time":"2026-03-08T08:41:29","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 64942cda-0d30-419a-802a-6ec03bb5d49e/nl — trying Selenium.}
+{"time":"2026-03-08T08:41:29","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/atlantic-gardens.nl.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:41:30","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/atlantic-gardens.pt-pt.html}
+{"time":"2026-03-08T08:41:32","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/atlantic-gardens.pt-pt.html}
+{"time":"2026-03-08T08:41:36","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/atlantic-gardens.pt-pt.html}
+{"time":"2026-03-08T08:41:42","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/atlantic-gardens.pt-pt.html}
+{"time":"2026-03-08T08:41:42","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for 64942cda-0d30-419a-802a-6ec03bb5d49e/pt — trying Selenium.}
+{"time":"2026-03-08T08:41:42","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/atlantic-gardens.pt-pt.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:41:43","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/r2-bahia-playa-design.es.html}
+{"time":"2026-03-08T08:41:46","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/r2-bahia-playa-design.es.html}
+{"time":"2026-03-08T08:41:50","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/r2-bahia-playa-design.es.html}
+{"time":"2026-03-08T08:41:56","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/r2-bahia-playa-design.es.html}
+{"time":"2026-03-08T08:41:56","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for ffd2f0b1-55d5-4ea3-9c79-b470602cfc4a/es — trying Selenium.}
+{"time":"2026-03-08T08:41:56","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/r2-bahia-playa-design.es.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:41:56","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/r2-bahia-playa-design.en-gb.html}
+{"time":"2026-03-08T08:41:59","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/r2-bahia-playa-design.en-gb.html}
+{"time":"2026-03-08T08:42:03","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/r2-bahia-playa-design.en-gb.html}
+{"time":"2026-03-08T08:42:09","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/r2-bahia-playa-design.en-gb.html}
+{"time":"2026-03-08T08:42:09","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for ffd2f0b1-55d5-4ea3-9c79-b470602cfc4a/en — trying Selenium.}
+{"time":"2026-03-08T08:42:09","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/r2-bahia-playa-design.en-gb.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:42:09","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/r2-bahia-playa-design.de.html}
+{"time":"2026-03-08T08:42:12","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/r2-bahia-playa-design.de.html}
+{"time":"2026-03-08T08:42:16","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/r2-bahia-playa-design.de.html}
+{"time":"2026-03-08T08:42:22","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/r2-bahia-playa-design.de.html}
+{"time":"2026-03-08T08:42:22","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for ffd2f0b1-55d5-4ea3-9c79-b470602cfc4a/de — trying Selenium.}
+{"time":"2026-03-08T08:42:22","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/r2-bahia-playa-design.de.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:42:23","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/r2-bahia-playa-design.fr.html}
+{"time":"2026-03-08T08:42:25","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/r2-bahia-playa-design.fr.html}
+{"time":"2026-03-08T08:42:29","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/r2-bahia-playa-design.fr.html}
+{"time":"2026-03-08T08:42:35","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/r2-bahia-playa-design.fr.html}
+{"time":"2026-03-08T08:42:35","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for ffd2f0b1-55d5-4ea3-9c79-b470602cfc4a/fr — trying Selenium.}
+{"time":"2026-03-08T08:42:35","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/r2-bahia-playa-design.fr.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:42:36","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/r2-bahia-playa-design.it.html}
+{"time":"2026-03-08T08:42:38","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/r2-bahia-playa-design.it.html}
+{"time":"2026-03-08T08:42:42","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/r2-bahia-playa-design.it.html}
+{"time":"2026-03-08T08:42:48","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/r2-bahia-playa-design.it.html}
+{"time":"2026-03-08T08:42:48","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for ffd2f0b1-55d5-4ea3-9c79-b470602cfc4a/it — trying Selenium.}
+{"time":"2026-03-08T08:42:48","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/r2-bahia-playa-design.it.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:42:49","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/r2-bahia-playa-design.nl.html}
+{"time":"2026-03-08T08:42:51","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/r2-bahia-playa-design.nl.html}
+{"time":"2026-03-08T08:42:55","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/r2-bahia-playa-design.nl.html}
+{"time":"2026-03-08T08:43:01","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/r2-bahia-playa-design.nl.html}
+{"time":"2026-03-08T08:43:01","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for ffd2f0b1-55d5-4ea3-9c79-b470602cfc4a/nl — trying Selenium.}
+{"time":"2026-03-08T08:43:01","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/r2-bahia-playa-design.nl.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:43:02","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/r2-bahia-playa-design.pt-pt.html}
+{"time":"2026-03-08T08:43:04","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/r2-bahia-playa-design.pt-pt.html}
+{"time":"2026-03-08T08:43:08","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/r2-bahia-playa-design.pt-pt.html}
+{"time":"2026-03-08T08:43:14","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/r2-bahia-playa-design.pt-pt.html}
+{"time":"2026-03-08T08:43:14","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for ffd2f0b1-55d5-4ea3-9c79-b470602cfc4a/pt — trying Selenium.}
+{"time":"2026-03-08T08:43:14","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/r2-bahia-playa-design.pt-pt.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:43:15","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/riu-palace-tres-islas.es.html}
+{"time":"2026-03-08T08:43:17","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/riu-palace-tres-islas.es.html}
+{"time":"2026-03-08T08:43:21","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/riu-palace-tres-islas.es.html}
+{"time":"2026-03-08T08:43:27","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/riu-palace-tres-islas.es.html}
+{"time":"2026-03-08T08:43:27","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for e7873559-a6b2-425a-8e17-839684dc493a/es — trying Selenium.}
+{"time":"2026-03-08T08:43:27","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/riu-palace-tres-islas.es.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:43:28","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/riu-palace-tres-islas.en-gb.html}
+{"time":"2026-03-08T08:43:30","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/riu-palace-tres-islas.en-gb.html}
+{"time":"2026-03-08T08:43:34","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/riu-palace-tres-islas.en-gb.html}
+{"time":"2026-03-08T08:43:40","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/riu-palace-tres-islas.en-gb.html}
+{"time":"2026-03-08T08:43:40","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for e7873559-a6b2-425a-8e17-839684dc493a/en — trying Selenium.}
+{"time":"2026-03-08T08:43:40","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/riu-palace-tres-islas.en-gb.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:43:41","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/riu-palace-tres-islas.de.html}
+{"time":"2026-03-08T08:43:43","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/riu-palace-tres-islas.de.html}
+{"time":"2026-03-08T08:43:47","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/riu-palace-tres-islas.de.html}
+{"time":"2026-03-08T08:43:53","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/riu-palace-tres-islas.de.html}
+{"time":"2026-03-08T08:43:53","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for e7873559-a6b2-425a-8e17-839684dc493a/de — trying Selenium.}
+{"time":"2026-03-08T08:43:53","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/riu-palace-tres-islas.de.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:43:54","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/riu-palace-tres-islas.fr.html}
+{"time":"2026-03-08T08:43:56","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/riu-palace-tres-islas.fr.html}
+{"time":"2026-03-08T08:44:00","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/riu-palace-tres-islas.fr.html}
+{"time":"2026-03-08T08:44:06","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/riu-palace-tres-islas.fr.html}
+{"time":"2026-03-08T08:44:06","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for e7873559-a6b2-425a-8e17-839684dc493a/fr — trying Selenium.}
+{"time":"2026-03-08T08:44:06","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/riu-palace-tres-islas.fr.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:44:07","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/riu-palace-tres-islas.it.html}
+{"time":"2026-03-08T08:44:09","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/riu-palace-tres-islas.it.html}
+{"time":"2026-03-08T08:44:13","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/riu-palace-tres-islas.it.html}
+{"time":"2026-03-08T08:44:19","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/riu-palace-tres-islas.it.html}
+{"time":"2026-03-08T08:44:19","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for e7873559-a6b2-425a-8e17-839684dc493a/it — trying Selenium.}
+{"time":"2026-03-08T08:44:19","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/riu-palace-tres-islas.it.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:44:20","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/riu-palace-tres-islas.nl.html}
+{"time":"2026-03-08T08:44:22","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/riu-palace-tres-islas.nl.html}
+{"time":"2026-03-08T08:44:26","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/riu-palace-tres-islas.nl.html}
+{"time":"2026-03-08T08:44:32","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/riu-palace-tres-islas.nl.html}
+{"time":"2026-03-08T08:44:32","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for e7873559-a6b2-425a-8e17-839684dc493a/nl — trying Selenium.}
+{"time":"2026-03-08T08:44:32","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/riu-palace-tres-islas.nl.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:44:33","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/riu-palace-tres-islas.pt-pt.html}
+{"time":"2026-03-08T08:44:35","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/riu-palace-tres-islas.pt-pt.html}
+{"time":"2026-03-08T08:44:39","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/riu-palace-tres-islas.pt-pt.html}
+{"time":"2026-03-08T08:44:45","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/riu-palace-tres-islas.pt-pt.html}
+{"time":"2026-03-08T08:44:45","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for e7873559-a6b2-425a-8e17-839684dc493a/pt — trying Selenium.}
+{"time":"2026-03-08T08:44:45","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/riu-palace-tres-islas.pt-pt.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:44:46","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/melia-fuerteventura.es.html}
+{"time":"2026-03-08T08:44:48","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/melia-fuerteventura.es.html}
+{"time":"2026-03-08T08:44:53","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/melia-fuerteventura.es.html}
+{"time":"2026-03-08T08:44:59","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/melia-fuerteventura.es.html}
+{"time":"2026-03-08T08:44:59","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for a55ce2cc-ac69-4e1c-a6b6-00d646ab2c89/es — trying Selenium.}
+{"time":"2026-03-08T08:44:59","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/melia-fuerteventura.es.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:44:59","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/melia-fuerteventura.en-gb.html}
+{"time":"2026-03-08T08:45:01","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/melia-fuerteventura.en-gb.html}
+{"time":"2026-03-08T08:45:06","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/melia-fuerteventura.en-gb.html}
+{"time":"2026-03-08T08:45:12","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/melia-fuerteventura.en-gb.html}
+{"time":"2026-03-08T08:45:12","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for a55ce2cc-ac69-4e1c-a6b6-00d646ab2c89/en — trying Selenium.}
+{"time":"2026-03-08T08:45:12","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/melia-fuerteventura.en-gb.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:45:12","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/melia-fuerteventura.de.html}
+{"time":"2026-03-08T08:45:14","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/melia-fuerteventura.de.html}
+{"time":"2026-03-08T08:45:19","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/melia-fuerteventura.de.html}
+{"time":"2026-03-08T08:45:25","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/melia-fuerteventura.de.html}
+{"time":"2026-03-08T08:45:25","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for a55ce2cc-ac69-4e1c-a6b6-00d646ab2c89/de — trying Selenium.}
+{"time":"2026-03-08T08:45:25","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/melia-fuerteventura.de.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:45:25","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/melia-fuerteventura.fr.html}
+{"time":"2026-03-08T08:45:27","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/melia-fuerteventura.fr.html}
+{"time":"2026-03-08T08:45:31","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/melia-fuerteventura.fr.html}
+{"time":"2026-03-08T08:45:38","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/melia-fuerteventura.fr.html}
+{"time":"2026-03-08T08:45:38","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for a55ce2cc-ac69-4e1c-a6b6-00d646ab2c89/fr — trying Selenium.}
+{"time":"2026-03-08T08:45:38","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/melia-fuerteventura.fr.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:45:38","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/melia-fuerteventura.it.html}
+{"time":"2026-03-08T08:45:40","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/melia-fuerteventura.it.html}
+{"time":"2026-03-08T08:45:45","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/melia-fuerteventura.it.html}
+{"time":"2026-03-08T08:45:51","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/melia-fuerteventura.it.html}
+{"time":"2026-03-08T08:45:51","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for a55ce2cc-ac69-4e1c-a6b6-00d646ab2c89/it — trying Selenium.}
+{"time":"2026-03-08T08:45:51","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/melia-fuerteventura.it.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:45:51","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/melia-fuerteventura.nl.html}
+{"time":"2026-03-08T08:45:53","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/melia-fuerteventura.nl.html}
+{"time":"2026-03-08T08:45:58","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/melia-fuerteventura.nl.html}
+{"time":"2026-03-08T08:46:04","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/melia-fuerteventura.nl.html}
+{"time":"2026-03-08T08:46:04","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for a55ce2cc-ac69-4e1c-a6b6-00d646ab2c89/nl — trying Selenium.}
+{"time":"2026-03-08T08:46:04","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/melia-fuerteventura.nl.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:46:04","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 1 for https://www.booking.com/hotel/es/melia-fuerteventura.pt-pt.html}
+{"time":"2026-03-08T08:46:07","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 2 for https://www.booking.com/hotel/es/melia-fuerteventura.pt-pt.html}
+{"time":"2026-03-08T08:46:11","level":"WARNING","logger":"app.scraper","msg":Block detected on attempt 3 for https://www.booking.com/hotel/es/melia-fuerteventura.pt-pt.html}
+{"time":"2026-03-08T08:46:17","level":"ERROR","logger":"app.scraper","msg":CloudScraper exhausted retries for https://www.booking.com/hotel/es/melia-fuerteventura.pt-pt.html}
+{"time":"2026-03-08T08:46:17","level":"INFO","logger":"app.scraper_service","msg":CloudScraper failed for a55ce2cc-ac69-4e1c-a6b6-00d646ab2c89/pt — trying Selenium.}
+{"time":"2026-03-08T08:46:17","level":"ERROR","logger":"app.scraper","msg":Selenium error for https://www.booking.com/hotel/es/melia-fuerteventura.pt-pt.html: [RuntimeError] webdriver-manager not installed and CHROMEDRIVER_PATH not set. Either set CHROMEDRIVER_PATH or install webdriver-manager.}
+{"time":"2026-03-08T08:46:17","level":"ERROR","logger":"app.main","msg":force-now scraping failed: 9 (of 10) futures unfinished}
+Traceback (most recent call last):
+  File "C:\BookingScraper\app\main.py", line 565, in force_scrape_now
+    result = service.dispatch_batch(url_ids=payload.url_ids, max_workers=workers)
+  File "C:\BookingScraper\app\scraper_service.py", line 170, in dispatch_batch
+    for future in as_completed(futures, timeout=timeout):
+                  ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SA\AppData\Local\Programs\Python\Python314\Lib\concurrent\futures\_base.py", line 233, in as_completed
+    raise TimeoutError(
+            '%d (of %d) futures unfinished' % (
+            len(pending), total_futures))
+TimeoutError: 9 (of 10) futures unfinished
+{"time":"2026-03-08T09:28:55","level":"INFO","logger":"app.database","msg":Database engine disposed.}
+{"time":"2026-03-08T09:28:55","level":"INFO","logger":"app.main","msg":BookingScraper shutdown complete.}
+{"time":"2026-03-08T10:02:55","level":"INFO","logger":"app.main","msg":Starting BookingScraper Pro v6.0.0 build 48 | platform=win32}
+{"time":"2026-03-08T10:02:55","level":"INFO","logger":"app.database","msg":Database engine created: host=localhost db=bookingscraper pool_size=10 max_overflow=5}
+{"time":"2026-03-08T10:07:44","level":"INFO","logger":"app.database","msg":Database engine disposed.}
+{"time":"2026-03-08T10:07:44","level":"INFO","logger":"app.main","msg":BookingScraper shutdown complete.}
+{"time":"2026-03-08T10:09:40","level":"INFO","logger":"app.main","msg":Starting BookingScraper Pro v6.0.0 build 48 | platform=win32}
+{"time":"2026-03-08T10:09:41","level":"INFO","logger":"app.database","msg":Database engine created: host=localhost db=bookingscraper pool_size=10 max_overflow=5}
+{"time":"2026-03-08T15:46:35","level":"INFO","logger":"app.main","msg":Starting BookingScraper Pro v6.0.0 build 48 | platform=win32}
+{"time":"2026-03-08T15:46:35","level":"INFO","logger":"app.database","msg":Database engine created: host=localhost db=bookingscraper pool_size=10 max_overflow=5}
+{"time":"2026-03-08T21:55:57","level":"INFO","logger":"app.main","msg":Starting BookingScraper Pro v6.0.0 build 48 | platform=win32}
+{"time":"2026-03-08T21:55:57","level":"INFO","logger":"app.database","msg":Database engine created: host=localhost db=bookingscraper pool_size=10 max_overflow=5}
+{"time":"2026-03-08T23:54:27","level":"INFO","logger":"app.main","msg":Starting BookingScraper Pro v6.0.0 build 48 | platform=win32}
+{"time":"2026-03-08T23:54:28","level":"INFO","logger":"app.database","msg":Database engine created: host=localhost db=bookingscraper pool_size=10 max_overflow=5}
+{"time":"2026-03-09T00:03:11","level":"INFO","logger":"app.main","msg":Starting BookingScraper Pro v6.0.0 build 48 | platform=win32}
+{"time":"2026-03-09T00:03:12","level":"INFO","logger":"app.database","msg":Database engine created: host=localhost db=bookingscraper pool_size=10 max_overflow=5}
+{"time":"2026-03-09T00:27:32","level":"INFO","logger":"app.main","msg":Starting BookingScraper Pro v6.0.0 build 48 | platform=win32}
+{"time":"2026-03-09T00:27:32","level":"INFO","logger":"app.database","msg":Database engine created: host=localhost db=bookingscraper pool_size=10 max_overflow=5}
+{"time":"2026-03-09T04:23:45","level":"INFO","logger":"app.main","msg":Starting BookingScraper Pro v6.0.0 build 48 | platform=win32}
+{"time":"2026-03-09T04:23:46","level":"INFO","logger":"app.database","msg":Database engine created: host=localhost db=bookingscraper pool_size=10 max_overflow=5}
+{"time":"2026-03-09T05:27:05","level":"INFO","logger":"app.main","msg":Starting BookingScraper Pro v6.0.0 build 48 | platform=win32}
+{"time":"2026-03-09T05:27:06","level":"INFO","logger":"app.database","msg":Database engine created: host=localhost db=bookingscraper pool_size=10 max_overflow=5}
+{"time":"2026-03-09T06:29:26","level":"INFO","logger":"app.main","msg":Starting BookingScraper Pro v6.0.0 build 48 | platform=win32}
+{"time":"2026-03-09T06:29:26","level":"INFO","logger":"app.database","msg":Database engine created: host=localhost db=bookingscraper pool_size=10 max_overflow=5}
+{"time":"2026-03-09T12:17:24","level":"INFO","logger":"app.main","msg":Starting BookingScraper Pro v6.0.0 build 48 | platform=win32}
+{"time":"2026-03-09T12:17:24","level":"INFO","logger":"app.database","msg":Database engine created: host=localhost db=bookingscraper pool_size=10 max_overflow=5}
+{"time":"2026-03-09T12:29:45","level":"INFO","logger":"app.main","msg":Starting BookingScraper Pro v6.0.0 build 48 | platform=win32}
+{"time":"2026-03-09T12:29:45","level":"INFO","logger":"app.database","msg":Database engine created: host=localhost db=bookingscraper pool_size=10 max_overflow=5}
+{"time":"2026-03-09T13:18:51","level":"INFO","logger":"app.main","msg":Starting BookingScraper Pro v6.0.0 build 48 | platform=win32}
+{"time":"2026-03-09T13:18:51","level":"INFO","logger":"app.database","msg":Database engine created: host=localhost db=bookingscraper pool_size=10 max_overflow=5}
+{"time":"2026-03-09T17:55:13","level":"INFO","logger":"app.main","msg":Starting BookingScraper Pro v6.0.0 build 48 | platform=win32}
+{"time":"2026-03-09T17:55:13","level":"INFO","logger":"app.database","msg":Database engine created: host=localhost db=bookingscraper pool_size=10 max_overflow=5}
+{"time":"2026-03-10T00:21:01","level":"INFO","logger":"app.main","msg":Starting BookingScraper Pro v6.0.0 build 48 | platform=win32}
+{"time":"2026-03-10T00:21:01","level":"INFO","logger":"app.database","msg":Database engine created: host=localhost db=bookingscraper pool_size=10 max_overflow=5}
+{"time":"2026-03-10T19:42:49","level":"INFO","logger":"app.main","msg":Starting BookingScraper Pro v6.0.0 build 48 | platform=win32}
+{"time":"2026-03-10T19:42:50","level":"INFO","logger":"app.database","msg":Database engine created: host=localhost db=bookingscraper pool_size=10 max_overflow=5}
