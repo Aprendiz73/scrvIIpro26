@@ -1,18 +1,31 @@
 """
-models.py — BookingScraper Pro v49
-Fixes applied:
-  BUG-DESC-001  : Description cross-contamination — thread-safe scraper sessions (see scraper.py).
-  BUG-IMG-401   : Image 401 — query params were stripped removing k= auth token (see scraper.py).
-  BUG-IMG-SCHEMA: image_downloads missing id_photo / category columns.
-  NEW-TABLE-001 : image_data — full photo metadata (orientation, dimensions, alt, created).
-  NEW-COLS-001  : hotels — schema.org fields: main_image_url, short_description, rating_value,
-                  best_rating, review_count_schema, street_address, address_locality,
-                  address_country, postal_code.
-  BUG-003/103   : ScrapingLog FK enforced via trigger (unchanged).
-  BUG-007/012   : version_id optimistic locking (unchanged).
-  BUG-016       : URLLanguageStatus check includes all valid statuses (unchanged).
-  BUG-019       : SystemMetrics time-series indexes (unchanged).
-  SCRAP-BUG-007 : JSONB defaults use callable factories (unchanged).
+models.py — BookingScraper Pro v6.0.0 build 50
+===============================================
+Cambios estructurales v50:
+
+  STRUCT-001 : HotelDescription — nueva tabla para descriptions multiidioma.
+               hotels.description eliminado y movido a hotels_description.
+  STRUCT-002 : hotels.photos eliminado — datos duplicados con image_downloads.
+  STRUCT-003 : hotels.review_count_schema renombrado a hotels.review_count
+               (el campo review_count anterior era scraper-regex, siempre NULL).
+  STRUCT-004 : hotels.address eliminado — campo muerto (siempre NULL);
+               street_address (JSON-LD) cubre la misma información.
+  BUG-EXTR-001: review_score ahora se asigna correctamente (antes siempre NULL).
+  BUG-EXTR-002: amenities ahora usa el selector actualizado de Booking.com React.
+  BUG-EXTR-003: review_count usa JSON-LD reviewCount (language-independent).
+  BUG-EXTR-006: city/country usan JSON-LD en lugar del breadcrumb completo.
+  BUG-EXTR-007: star_rating normalizado ÷2 (Booking.com usa escala 0-10).
+  BUG-LOAD-001: load_urls.py ON CONFLICT ahora actualiza external_ref.
+
+Fixes heredados (v49 y anteriores):
+  BUG-DESC-001  : Cross-contamination de description — sesiones thread-safe.
+  BUG-IMG-401   : URLs de imágenes preservan parámetro k= (auth token).
+  BUG-IMG-SCHEMA: image_downloads incluye id_photo / category.
+  NEW-TABLE-001 : image_data — metadatos completos de fotos.
+  BUG-003/103   : FK de ScrapingLog via trigger (partitioned table).
+  BUG-007/012   : version_id — optimistic locking.
+  BUG-016       : URLLanguageStatus check incluye todos los estados válidos.
+  BUG-019       : SystemMetrics time-series indexes.
   Platform      : Windows 11 / PostgreSQL 15+ / psycopg v3.
 """
 
@@ -50,11 +63,11 @@ def _utcnow() -> datetime:
 
 class URLQueue(Base):
     """
-    Scraping task queue.
+    Cola de tareas de scraping.
 
-    Optimistic locking via `version_id`:
-    Usage — always reload with session.get(URLQueue, id) before updating
-    status to detect concurrent modifications.
+    external_ref: ID numérico del CSV origen (e.g. 1001, 1002...).
+    BUG-LOAD-001: load_urls.py ahora usa ON CONFLICT DO UPDATE para garantizar
+                  que external_ref se guarda incluso en re-cargas de CSV.
     """
     __tablename__ = "url_queue"
     __mapper_args__ = {
@@ -98,7 +111,7 @@ class URLQueue(Base):
     )
 
     def __repr__(self) -> str:
-        return f"<URLQueue id={self.id} status={self.status}>"
+        return f"<URLQueue id={self.id} status={self.status} ext={self.external_ref}>"
 
 
 # ---------------------------------------------------------------------------
@@ -107,14 +120,21 @@ class URLQueue(Base):
 
 class Hotel(Base):
     """
-    Core hotel data store.
+    Datos principales del hotel por idioma.
 
-    NEW-COLS-001: schema.org / JSON-LD fields added (v49):
-      main_image_url    — Hotel.image from schema.org
-      short_description — Hotel.description (short) from schema.org
+    v50 — cambios estructurales:
+      - description    : ELIMINADO → movido a HotelDescription (STRUCT-001)
+      - photos         : ELIMINADO → duplicado con image_downloads (STRUCT-002)
+      - address        : ELIMINADO → campo muerto, usar street_address (STRUCT-004)
+      - review_count   : RENOMBRADO desde review_count_schema (JSON-LD, fiable)
+                         El campo anterior review_count (regex, siempre NULL) se elimina.
+
+    Campos schema.org / JSON-LD (NEW-COLS-001, v49):
+      main_image_url    — Hotel.image
+      short_description — Hotel.description (resumen corto)
       rating_value      — aggregateRating.ratingValue
       best_rating       — aggregateRating.bestRating
-      review_count_schema — aggregateRating.reviewCount (cross-check vs scraped)
+      review_count      — aggregateRating.reviewCount (JSON-LD, renombrado de review_count_schema)
       street_address    — address.streetAddress
       address_locality  — address.addressLocality
       address_country   — address.addressCountry
@@ -137,15 +157,22 @@ class Hotel(Base):
     hotel_id_booking: Mapped[Optional[str]] = mapped_column(String(64), nullable=True, index=True)
     city: Mapped[Optional[str]] = mapped_column(Text, nullable=True, index=True)
     country: Mapped[Optional[str]] = mapped_column(Text, nullable=True, index=True)
-    address: Mapped[Optional[str]] = mapped_column(String(512), nullable=True)
     latitude: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
     longitude: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
-    star_rating: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
+    star_rating: Mapped[Optional[float]] = mapped_column(
+        Float, nullable=True,
+        comment="Estrellas normalizadas 0-5 (valor raw Booking ÷ 2)"
+    )
     review_score: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
-    review_count: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
-    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
 
-    # NEW-COLS-001: schema.org / JSON-LD enrichment fields
+    # STRUCT-003: review_count = reviewCount de JSON-LD (antes review_count_schema)
+    # El antiguo campo review_count (regex scraper, siempre NULL) fue eliminado.
+    review_count: Mapped[Optional[int]] = mapped_column(
+        Integer, nullable=True,
+        comment="aggregateRating.reviewCount de JSON-LD (language-independent)"
+    )
+
+    # schema.org / JSON-LD enrichment fields (NEW-COLS-001)
     main_image_url: Mapped[Optional[str]] = mapped_column(String(2048), nullable=True,
         comment="Hotel primary image URL from schema.org JSON-LD 'image' field")
     short_description: Mapped[Optional[str]] = mapped_column(Text, nullable=True,
@@ -154,8 +181,6 @@ class Hotel(Base):
         comment="aggregateRating.ratingValue from schema.org")
     best_rating: Mapped[Optional[float]] = mapped_column(Float, nullable=True,
         comment="aggregateRating.bestRating from schema.org (usually 10)")
-    review_count_schema: Mapped[Optional[int]] = mapped_column(Integer, nullable=True,
-        comment="aggregateRating.reviewCount from schema.org (cross-check with review_count)")
     street_address: Mapped[Optional[str]] = mapped_column(String(512), nullable=True,
         comment="address.streetAddress from schema.org")
     address_locality: Mapped[Optional[str]] = mapped_column(String(256), nullable=True,
@@ -166,10 +191,10 @@ class Hotel(Base):
         comment="address.postalCode from schema.org")
 
     # JSONB columns — callable default prevents shared mutable state (SCRAP-BUG-007)
-    amenities: Mapped[Optional[Dict]] = mapped_column(JSONB, nullable=True, default=dict)
+    amenities: Mapped[Optional[List]] = mapped_column(JSONB, nullable=True, default=list,
+        comment="Lista de servicios del hotel extraída del bloque de instalaciones")
     room_types: Mapped[Optional[List]] = mapped_column(JSONB, nullable=True, default=list)
     policies: Mapped[Optional[Dict]] = mapped_column(JSONB, nullable=True, default=dict)
-    photos: Mapped[Optional[List]] = mapped_column(JSONB, nullable=True, default=list)
     raw_data: Mapped[Optional[Dict]] = mapped_column(JSONB, nullable=True, default=dict)
     scrape_duration_s: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
     scrape_engine: Mapped[Optional[str]] = mapped_column(String(32), nullable=True)
@@ -183,13 +208,19 @@ class Hotel(Base):
 
     __table_args__ = (
         UniqueConstraint("url_id", "language", name="uq_hotels_url_lang"),
-        # BUG-STARRATING-002: Booking.com uses 0-10 scale
+        # BUG-STARRATING-002: Booking.com usa escala 0-10, normalizado a 0-5 en extractor
         CheckConstraint(
-            "star_rating IS NULL OR (star_rating >= 0 AND star_rating <= 10)",
+            "star_rating IS NULL OR (star_rating >= 0 AND star_rating <= 5)",
             name="chk_hotels_star_rating",
         ),
-        CheckConstraint("review_score BETWEEN 0 AND 10", name="chk_hotels_review_score"),
-        CheckConstraint("review_count >= 0", name="chk_hotels_review_count_positive"),
+        CheckConstraint(
+            "review_score IS NULL OR review_score BETWEEN 0 AND 10",
+            name="chk_hotels_review_score",
+        ),
+        CheckConstraint(
+            "review_count IS NULL OR review_count >= 0",
+            name="chk_hotels_review_count",
+        ),
         Index("ix_hotels_city_country", "city", "country"),
         Index("ix_hotels_created_at", "created_at"),
         Index("ix_hotels_amenities_gin", "amenities", postgresql_using="gin"),
@@ -200,13 +231,70 @@ class Hotel(Base):
 
 
 # ---------------------------------------------------------------------------
+# HotelDescription  (STRUCT-001 — nueva tabla v50)
+# ---------------------------------------------------------------------------
+
+class HotelDescription(Base):
+    """
+    Descripción larga del hotel por idioma.
+
+    STRUCT-001: Separada de hotels para:
+      - Reducir tamaño de la tabla principal hotels (TEXT de ~500-2000 chars por fila).
+      - Permitir queries sobre hotels sin cargar descripciones.
+      - Facilitar indexado GIN full-text sobre descriptions de forma independiente.
+
+    Estructura:
+      hotel_id  — FK a hotels.id
+      url_id    — FK a url_queue.id (redundante pero útil para queries sin JOIN a hotels)
+      language  — código ISO 639-1 del idioma
+      description — texto completo extraído del HTML
+    """
+    __tablename__ = "hotels_description"
+
+    id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), primary_key=True, default=uuid.uuid4
+    )
+    hotel_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), nullable=False, index=True,
+        comment="FK a hotels.id"
+    )
+    url_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), nullable=False, index=True,
+        comment="FK a url_queue.id — redundante pero útil para queries directas"
+    )
+    language: Mapped[str] = mapped_column(String(10), nullable=False)
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), nullable=False, default=_utcnow
+    )
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), nullable=False, default=_utcnow, onupdate=_utcnow
+    )
+
+    __table_args__ = (
+        UniqueConstraint("url_id", "language", name="uq_hdesc_url_lang"),
+        Index("ix_hdesc_hotel_id", "hotel_id"),
+        Index("ix_hdesc_language", "language"),
+        # Índice GIN full-text (opcional, activar si se requiere búsqueda textual)
+        # Index("ix_hdesc_desc_gin", "description", postgresql_using="gin",
+        #       postgresql_ops={"description": "to_tsvector('simple', description)"}),
+    )
+
+    def __repr__(self) -> str:
+        return (
+            f"<HotelDescription hotel_id={self.hotel_id} lang={self.language} "
+            f"len={len(self.description or '')}>"
+        )
+
+
+# ---------------------------------------------------------------------------
 # URLLanguageStatus
 # ---------------------------------------------------------------------------
 
 class URLLanguageStatus(Base):
     """
-    Tracks per-language scraping completion for each URL.
-    BUG-016 fix: check constraint includes ALL valid statuses.
+    Tracking de completitud de scraping por URL y lenguaje.
+    BUG-016: check constraint incluye TODOS los estados válidos.
     """
     __tablename__ = "url_language_status"
 
@@ -238,13 +326,12 @@ class URLLanguageStatus(Base):
 
 class ScrapingLog(Base):
     """
-    High-volume event log, partitioned by month (RANGE on scraped_at).
+    Log de eventos de scraping — tabla particionada por mes (RANGE on scraped_at).
 
-    ⚠️  BUG-003 / BUG-103 mitigation:
-    PostgreSQL does NOT support FOREIGN KEY constraints on partitioned tables.
-    Referential integrity for url_id / hotel_id is enforced by DB trigger:
+    ⚠️  BUG-003 / BUG-103: PostgreSQL NO soporta FK constraints en tablas particionadas.
+    La integridad referencial para url_id / hotel_id se garantiza via trigger:
         trg_scraping_logs_fk_check  (BEFORE INSERT / UPDATE)
-    Created by install_clean_v49.sql.
+    Creado por migration_v50.sql.
     """
     __tablename__ = "scraping_logs"
 
@@ -276,24 +363,19 @@ class ScrapingLog(Base):
 
 class ImageDownload(Base):
     """
-    Tracks individual image download attempts per hotel photo and size category.
+    Tracking de descargas individuales de imágenes por hotel y categoría de tamaño.
 
-    BUG-IMG-SCHEMA (v49): Added id_photo and category columns.
-      id_photo  — Booking.com photo ID (e.g. '49312038'), FK to image_data.id_photo
-      category  — size variant: 'thumb_url' | 'large_url' | 'highres_url'
-
-    Unique constraint changed from (hotel_id, url) to (hotel_id, url) kept
-    plus partial unique on (hotel_id, id_photo, category) when id_photo IS NOT NULL.
+    BUG-IMG-SCHEMA (v49): Columnas id_photo y category añadidas.
+    STRUCT-002 (v50): hotels.photos eliminado — image_downloads es la fuente única de verdad.
     """
     __tablename__ = "image_downloads"
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     hotel_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False, index=True)
-    # NEW-COLS v49
     id_photo: Mapped[Optional[str]] = mapped_column(String(32), nullable=True, index=True,
-        comment="Booking.com photo ID from hotelPhotos JS (e.g. '49312038')")
+        comment="Booking.com photo ID (e.g. '49312038')")
     category: Mapped[Optional[str]] = mapped_column(String(16), nullable=True,
-        comment="Image size variant: thumb_url | large_url | highres_url")
+        comment="Variante de tamaño: thumb_url | large_url | highres_url")
     url: Mapped[str] = mapped_column(String(2048), nullable=False)
     local_path: Mapped[Optional[str]] = mapped_column(String(1024), nullable=True)
     file_size_bytes: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
@@ -313,48 +395,36 @@ class ImageDownload(Base):
             name="chk_imgdl_category",
         ),
         UniqueConstraint("hotel_id", "url", name="uq_imgdl_hotel_url"),
-        # Partial unique: one download record per (hotel, photo, size) when id_photo known
-        # NOTE: partial unique index requires manual creation in install_clean_v49.sql
         Index("ix_imgdl_status", "status"),
         Index("ix_imgdl_id_photo", "id_photo"),
     )
 
 
 # ---------------------------------------------------------------------------
-# ImageData  (NEW — v49)
+# ImageData
 # ---------------------------------------------------------------------------
 
 class ImageData(Base):
     """
-    Full photo metadata from Booking.com hotelPhotos JS variable.
+    Metadatos completos de fotos desde el JS hotelPhotos de Booking.com.
 
-    One row per unique photo (id_photo is globally unique across Booking.com).
-    Stores orientation, dimensions, alt text, and original creation timestamp.
-
-    Extracted from the inline JavaScript block:
-        hotelPhotos: [{ id, thumb_url, large_url, highres_url, alt, orientation,
-                        created, grid: { photo_width, photo_height } }, ...]
+    Una fila por foto única (id_photo es globalmente único en Booking.com).
     """
     __tablename__ = "image_data"
 
     id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     id_photo: Mapped[str] = mapped_column(String(32), nullable=False, unique=True,
-        comment="Booking.com photo ID — globally unique (e.g. '49312038')")
+        comment="Booking.com photo ID — globalmente único")
     hotel_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), nullable=False, index=True,
-        comment="FK to hotels.id — hotel this photo belongs to")
-    orientation: Mapped[Optional[str]] = mapped_column(String(16), nullable=True,
-        comment="'landscape' or 'portrait'")
-    photo_width: Mapped[Optional[int]] = mapped_column(Integer, nullable=True,
-        comment="Original photo width in pixels (from grid.photo_width)")
-    photo_height: Mapped[Optional[int]] = mapped_column(Integer, nullable=True,
-        comment="Original photo height in pixels (from grid.photo_height)")
-    alt: Mapped[Optional[str]] = mapped_column(Text, nullable=True,
-        comment="Alt text / image description")
+        comment="FK a hotels.id")
+    orientation: Mapped[Optional[str]] = mapped_column(String(16), nullable=True)
+    photo_width: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    photo_height: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
+    alt: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
     created_at_photo: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True), nullable=True,
-        comment="Booking.com photo creation timestamp (from hotelPhotos[].created)")
+        comment="Timestamp de creación de la foto en Booking.com")
     created_at: Mapped[datetime] = mapped_column(
-        DateTime(timezone=True), nullable=False, default=_utcnow,
-        comment="Record insertion timestamp"
+        DateTime(timezone=True), nullable=False, default=_utcnow
     )
 
     __table_args__ = (
@@ -362,8 +432,8 @@ class ImageData(Base):
             "orientation IS NULL OR orientation IN ('landscape','portrait','square')",
             name="chk_imgdata_orientation",
         ),
-        CheckConstraint("photo_width > 0", name="chk_imgdata_width_positive"),
-        CheckConstraint("photo_height > 0", name="chk_imgdata_height_positive"),
+        CheckConstraint("photo_width IS NULL OR photo_width > 0", name="chk_imgdata_width_positive"),
+        CheckConstraint("photo_height IS NULL OR photo_height > 0", name="chk_imgdata_height_positive"),
         Index("ix_imgdata_hotel_id", "hotel_id"),
     )
 
@@ -377,8 +447,8 @@ class ImageData(Base):
 
 class SystemMetrics(Base):
     """
-    Periodic system health snapshots.
-    BUG-019 fix: indexes on time-series query columns.
+    Snapshots periódicos de salud del sistema.
+    BUG-019: índices en columnas de series temporales.
     """
     __tablename__ = "system_metrics"
 
